@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Dein Bildschirm, ruhig wie eine gedruckte Seite.</string>
+    <string name="a11y_description">Legt eine Papiertextur über den Bildschirm, um ein E-Ink-Display nachzuahmen. Liest keine Bildschirminhalte.</string>
+
+    <string name="hero_title_on">Carta ist an</string>
+    <string name="hero_title_off">Carta ist aus</string>
+    <string name="hero_summary_off">Tippe, um deinen Bildschirm in Papier zu verwandeln.</string>
+
+    <string name="section_effects">Effekte</string>
+    <string name="effect_grayscale_title">Graustufen</string>
+    <string name="effect_grayscale_description">Entfernt die Farbe vom ganzen Bildschirm, wie Tinte auf Papier.</string>
+    <string name="effect_no_animations_title">Animationen aus</string>
+    <string name="effect_no_animations_description">Schaltet Systemanimationen aus: Bildschirme wechseln sofort.</string>
+    <string name="effect_paper_title">Papiertextur</string>
+    <string name="effect_paper_description">Fügt überall einen warmen Ton und eine feine Körnung hinzu.</string>
+    <string name="effect_wallpaper_title">Neutraler Hintergrund</string>
+    <string name="effect_wallpaper_description">Papier beim hellen Design, Tinte beim dunklen. Dein Hintergrund kommt zurück, wenn du es ausschaltest.</string>
+    <string name="short_grayscale">Grau</string>
+    <string name="short_no_animations">Ruhig</string>
+    <string name="short_paper">Textur</string>
+    <string name="short_wallpaper">Hintergrund</string>
+
+    <string name="paper_intensity_title">Texturstärke</string>
+
+    <string name="section_setup">Einrichtung</string>
+    <string name="setup_secure_title">Systemberechtigung</string>
+    <string name="setup_secure_pending">Nötig für Graustufen und „Animationen aus“. Einmal von einem Computer mit verbundenem Telefon ausführen:</string>
+    <string name="setup_secure_done">Erteilt. Graustufen und „Animationen aus“ sind verfügbar.</string>
+    <string name="setup_service_title">Texturdienst</string>
+    <string name="setup_service_pending">Nötig, um die Papiertextur zu zeichnen. Aktiviere Carta unter den Bedienungshilfen.</string>
+    <string name="setup_service_done">Aktiv. Die Papiertextur kann über jeder App erscheinen.</string>
+    <string name="setup_service_action">Bedienungshilfen öffnen</string>
+    <string name="setup_files_title">Dateizugriff</string>
+    <string name="setup_files_pending">Nötig, um deinen Hintergrund zu sichern und später wiederherzustellen. Android erlaubt das nur mit Zugriff auf alle Dateien.</string>
+    <string name="setup_files_done">Erteilt. Dein Hintergrund wird vor jeder Änderung gesichert.</string>
+    <string name="setup_files_action">Zugriff erlauben</string>
+
+    <string name="missing_permission">Erteile zuerst die Systemberechtigung, siehe Einrichtung.</string>
+    <string name="missing_files_access">Erteile zuerst den Dateizugriff, siehe Einrichtung.</string>
+
+    <string name="widget_label">Carta-Schalter</string>
+    <string name="widget_description">Schalte Carta vom Startbildschirm aus ein und aus.</string>
+    <string name="widget_state_on">An</string>
+    <string name="widget_state_off">Aus</string>
+</resources>

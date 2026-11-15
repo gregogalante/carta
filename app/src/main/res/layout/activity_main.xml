@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/literata_display"
+            android:text="@string/app_name"
+            android:textColor="@color/ink"
+            android:textSize="44sp" />
+
+        <TextView
+            style="@style/Carta.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/tagline"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+        <!-- Hero: the whole card is the on/off switch -->
+        <LinearLayout
+            android:id="@+id/hero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_hero"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="184dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="41dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_page"
+                    android:tint="@color/paper" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/bg_pill_track"
+                    android:importantForAccessibility="no"
+                    android:padding="5dp">
+
+                    <View
+                        android:id="@+id/hero_knob"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:background="@drawable/bg_pill_knob" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/hero_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/literata_display"
+                android:textColor="@color/paper"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/hero_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/literata"
+                android:textColor="@color/hero_text_muted"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Effects: rows inflated from Toggle -->
+        <TextView
+            style="@style/Carta.Overline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/section_effects" />
+
+        <LinearLayout
+            android:id="@+id/effects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+
+        <!-- Texture intensity: live, the overlay service follows the pref while dragging -->
+        <LinearLayout
+            android:id="@+id/intensity_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Carta.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/paper_intensity_title" />
+
+                <TextView
+                    android:id="@+id/intensity_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_chip"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:paddingHorizontal="12dp"
+                    android:text="@string/paper_intensity_auto"
+                    android:textAllCaps="true"
+                    android:textColor="@color/chip_text"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/intensity_value"
+                    style="@style/Carta.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="2"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/intensity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:paddingHorizontal="0dp"
+                android:progressBackgroundTint="@color/hairline"
+                android:progressTint="@color/accent"
+                android:thumbTint="@color/accent" />
+        </LinearLayout>
+
+        <!-- Setup -->
+        <TextView
+            style="@style/Carta.Overline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/section_setup" />
+
+        <View
+            style="@style/Carta.Divider"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <TextView
+                android:id="@+id/secure_marker"
+                style="@style/Carta.Title"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Carta.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_secure_title" />
+
+                <TextView
+                    android:id="@+id/secure_body"
+                    style="@style/Carta.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/secure_command"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_code"
+                    android:fontFamily="monospace"
+                    android:padding="12dp"
+                    android:textColor="@color/ink"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Carta.Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <TextView
+                android:id="@+id/service_marker"
+                style="@style/Carta.Title"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Carta.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_service_title" />
+
+                <TextView
+                    android:id="@+id/service_body"
+                    style="@style/Carta.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/service_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_outline_button"
+                    android:fontFamily="@font/literata"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="@string/setup_service_action"
+                    android:textColor="@color/accent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Carta.Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="16dp">
+
+            <TextView
+                android:id="@+id/files_marker"
+                style="@style/Carta.Title"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Carta.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_files_title" />
+
+                <TextView
+                    android:id="@+id/files_body"
+                    style="@style/Carta.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/files_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_outline_button"
+                    android:fontFamily="@font/literata"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="@string/setup_files_action"
+                    android:textColor="@color/accent"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Carta.Divider" />
+
+        <TextView
+            android:id="@+id/version"
+            style="@style/Carta.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

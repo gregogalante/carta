@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The launcher page glyph cropped to its bounds, single color so it can be tinted. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="38dp"
+    android:height="52dp"
+    android:viewportWidth="38"
+    android:viewportHeight="52">
+    <group
+        android:translateX="-35"
+        android:translateY="-28">
+        <path
+            android:fillColor="#FF000000"
+            android:fillType="evenOdd"
+            android:pathData="M37,28 H61 L73,40 V78 A2,2 0 0 1 71,80 H37 A2,2 0 0 1 35,78 V30 A2,2 0 0 1 37,28 Z
+                M61,28 V40 H73 Z
+                M41,47 H67 V49.5 H41 Z
+                M41,54 H67 V56.5 H41 Z
+                M41,61 H67 V63.5 H41 Z
+                M41,68 H58 V70.5 H41 Z" />
+        <path
+            android:fillAlpha="0.55"
+            android:fillColor="#FF000000"
+            android:pathData="M61,28 V38 A2,2 0 0 0 63,40 H73 Z" />
+    </group>
+</vector>

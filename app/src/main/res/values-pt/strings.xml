@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Sua tela, calma como uma página impressa.</string>
+    <string name="a11y_description">Desenha uma textura de papel sobre a tela para imitar uma tela de tinta eletrônica. Não lê o conteúdo da tela.</string>
+
+    <string name="hero_title_on">Carta está ligada</string>
+    <string name="hero_title_off">Carta está desligada</string>
+    <string name="hero_summary_off">Toque para transformar sua tela em papel.</string>
+
+    <string name="section_effects">Efeitos</string>
+    <string name="effect_grayscale_title">Escala de cinza</string>
+    <string name="effect_grayscale_description">Remove a cor de toda a tela, como tinta no papel.</string>
+    <string name="effect_no_animations_title">Movimento parado</string>
+    <string name="effect_no_animations_description">Desativa as animações do sistema: as telas mudam na hora.</string>
+    <string name="effect_paper_title">Textura de papel</string>
+    <string name="effect_paper_description">Adiciona um tom quente e um grão sutil em tudo.</string>
+    <string name="effect_wallpaper_title">Fundo neutro</string>
+    <string name="effect_wallpaper_description">Papel com o tema claro, tinta com o escuro. Seu fundo volta quando você desliga.</string>
+    <string name="short_grayscale">Cinza</string>
+    <string name="short_no_animations">Parado</string>
+    <string name="short_paper">Textura</string>
+    <string name="short_wallpaper">Fundo</string>
+
+    <string name="paper_intensity_title">Intensidade da textura</string>
+
+    <string name="section_setup">Configuração</string>
+    <string name="setup_secure_title">Permissão do sistema</string>
+    <string name="setup_secure_pending">Necessária para a escala de cinza e o movimento parado. Execute uma vez em um computador com o celular conectado:</string>
+    <string name="setup_secure_done">Concedida. Escala de cinza e movimento parado disponíveis.</string>
+    <string name="setup_service_title">Serviço de textura</string>
+    <string name="setup_service_pending">Necessário para desenhar a textura de papel. Ative o Carta nos serviços de acessibilidade.</string>
+    <string name="setup_service_done">Ativo. A textura de papel pode aparecer sobre qualquer app.</string>
+    <string name="setup_service_action">Abrir configurações de acessibilidade</string>
+    <string name="setup_files_title">Acesso a arquivos</string>
+    <string name="setup_files_pending">Necessário para salvar seu fundo e restaurá-lo depois. O Android só permite isso com o acesso a todos os arquivos.</string>
+    <string name="setup_files_done">Concedido. Seu fundo é salvo antes de ser trocado.</string>
+    <string name="setup_files_action">Conceder acesso</string>
+
+    <string name="missing_permission">Conceda primeiro a permissão do sistema, veja Configuração.</string>
+    <string name="missing_files_access">Conceda primeiro o acesso a arquivos, veja Configuração.</string>
+
+    <string name="widget_label">Interruptor do Carta</string>
+    <string name="widget_description">Ligue e desligue o Carta pela tela inicial.</string>
+    <string name="widget_state_on">Ligada</string>
+    <string name="widget_state_off">Desligada</string>
+</resources>

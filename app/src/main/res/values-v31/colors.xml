@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material You: the accent follows the user's system palette (fountain-pen blue below Android 12). -->
+    <color name="accent">@android:color/system_accent1_600</color>
+    <color name="on_accent_muted">@android:color/system_accent1_100</color>
+</resources>

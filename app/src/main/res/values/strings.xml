@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Carta</string>
+    <string name="version" translatable="false">Carta %1$s</string>
+    <string name="secure_command" translatable="false">adb shell pm grant %1$s android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="paper_intensity_value" translatable="false">%1$d%%</string>
+    <string name="paper_intensity_auto" translatable="false">Auto</string>
+    <string name="summary_separator" translatable="false">" · "</string>
+
+    <string name="tagline">Your screen, as calm as a printed page.</string>
+    <string name="a11y_description">Draws a paper texture over the screen to mimic an e-ink display. It does not read screen content.</string>
+
+    <string name="hero_title_on">Carta is on</string>
+    <string name="hero_title_off">Carta is off</string>
+    <string name="hero_summary_off">Tap to turn your screen into paper.</string>
+
+    <string name="section_effects">Effects</string>
+    <string name="effect_grayscale_title">Grayscale</string>
+    <string name="effect_grayscale_description">Removes color from the whole screen, like ink on paper.</string>
+    <string name="effect_no_animations_title">Still motion</string>
+    <string name="effect_no_animations_description">Turns off system animations: screens change instantly.</string>
+    <string name="effect_paper_title">Paper texture</string>
+    <string name="effect_paper_description">Adds a warm tint and a subtle grain over everything.</string>
+    <string name="effect_wallpaper_title">Neutral wallpaper</string>
+    <string name="effect_wallpaper_description">Paper with the light theme, ink with the dark one. Your wallpaper comes back when you turn it off.</string>
+    <string name="short_grayscale">Grayscale</string>
+    <string name="short_no_animations">Still</string>
+    <string name="short_paper">Texture</string>
+    <string name="short_wallpaper">Wallpaper</string>
+
+    <string name="paper_intensity_title">Texture intensity</string>
+
+    <string name="section_setup">Setup</string>
+    <string name="setup_secure_title">System permission</string>
+    <string name="setup_secure_pending">Needed for grayscale and still motion. Run this once from a computer with the phone connected:</string>
+    <string name="setup_secure_done">Granted. Grayscale and still motion are available.</string>
+    <string name="setup_service_title">Texture service</string>
+    <string name="setup_service_pending">Needed to draw the paper texture. Enable Carta among the accessibility services.</string>
+    <string name="setup_service_done">Active. The paper texture can be drawn over every app.</string>
+    <string name="setup_service_action">Open accessibility settings</string>
+    <string name="setup_files_title">File access</string>
+    <string name="setup_files_pending">Needed to save your wallpaper and put it back later. Android only allows it through All files access.</string>
+    <string name="setup_files_done">Granted. Your wallpaper is saved before it changes.</string>
+    <string name="setup_files_action">Grant access</string>
+
+    <string name="missing_permission">Grant the system permission first, see Setup.</string>
+    <string name="missing_files_access">Grant file access first, see Setup.</string>
+
+    <string name="widget_label">Carta switch</string>
+    <string name="widget_description">Turn Carta on and off from the home screen.</string>
+    <string name="widget_state_on">On</string>
+    <string name="widget_state_off">Off</string>
+</resources>

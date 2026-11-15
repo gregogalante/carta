@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Votre écran, calme comme une page imprimée.</string>
+    <string name="a11y_description">Dessine une texture papier sur l’écran pour imiter un écran à encre électronique. Ne lit pas le contenu de l’écran.</string>
+
+    <string name="hero_title_on">Carta est activée</string>
+    <string name="hero_title_off">Carta est désactivée</string>
+    <string name="hero_summary_off">Touchez pour transformer votre écran en papier.</string>
+
+    <string name="section_effects">Effets</string>
+    <string name="effect_grayscale_title">Niveaux de gris</string>
+    <string name="effect_grayscale_description">Retire la couleur de tout l’écran, comme de l’encre sur du papier.</string>
+    <string name="effect_no_animations_title">Mouvement figé</string>
+    <string name="effect_no_animations_description">Désactive les animations du système : les écrans changent instantanément.</string>
+    <string name="effect_paper_title">Texture papier</string>
+    <string name="effect_paper_description">Ajoute une teinte chaude et un grain léger sur tout l’écran.</string>
+    <string name="effect_wallpaper_title">Fond neutre</string>
+    <string name="effect_wallpaper_description">Papier avec le thème clair, encre avec le sombre. Votre fond revient quand vous le désactivez.</string>
+    <string name="short_grayscale">Gris</string>
+    <string name="short_no_animations">Figé</string>
+    <string name="short_paper">Texture</string>
+    <string name="short_wallpaper">Fond</string>
+
+    <string name="paper_intensity_title">Intensité de la texture</string>
+
+    <string name="section_setup">Configuration</string>
+    <string name="setup_secure_title">Autorisation système</string>
+    <string name="setup_secure_pending">Nécessaire pour les niveaux de gris et le mouvement figé. Exécutez une fois depuis un ordinateur, téléphone connecté :</string>
+    <string name="setup_secure_done">Accordée. Niveaux de gris et mouvement figé disponibles.</string>
+    <string name="setup_service_title">Service de texture</string>
+    <string name="setup_service_pending">Nécessaire pour dessiner la texture papier. Activez Carta parmi les services d’accessibilité.</string>
+    <string name="setup_service_done">Actif. La texture papier peut s’afficher sur toutes les applis.</string>
+    <string name="setup_service_action">Ouvrir les paramètres d’accessibilité</string>
+    <string name="setup_files_title">Accès aux fichiers</string>
+    <string name="setup_files_pending">Nécessaire pour enregistrer votre fond et le remettre ensuite. Android ne le permet qu’avec l’accès à tous les fichiers.</string>
+    <string name="setup_files_done">Accordé. Votre fond est enregistré avant d’être changé.</string>
+    <string name="setup_files_action">Autoriser l’accès</string>
+
+    <string name="missing_permission">Accordez d’abord l’autorisation système, voir Configuration.</string>
+    <string name="missing_files_access">Accordez d’abord l’accès aux fichiers, voir Configuration.</string>
+
+    <string name="widget_label">Interrupteur Carta</string>
+    <string name="widget_description">Activez et désactivez Carta depuis l’écran d’accueil.</string>
+    <string name="widget_state_on">Activée</string>
+    <string name="widget_state_off">Désactivée</string>
+</resources>

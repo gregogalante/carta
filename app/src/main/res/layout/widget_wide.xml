@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 2×1 and larger: icon chip, name and state, and the same pill switch as the app's hero card. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:background="@drawable/bg_widget"
+    android:clipToOutline="true"
+    tools:targetApi="31"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="12dp">
+
+    <FrameLayout
+        android:id="@+id/widget_chip"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_widget_chip">
+
+        <ImageView
+            android:id="@+id/widget_icon"
+            android:layout_width="17dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_page"
+            android:tint="@color/widget_on_surface" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/widget_on_surface"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/widget_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/widget_state_off"
+            android:textColor="@color/widget_on_surface_muted"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/widget_track"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_widget_track_off"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/widget_knob_off"
+            android:importantForAccessibility="no"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/bg_widget_knob_off" />
+
+        <ImageView
+            android:id="@+id/widget_knob_on"
+            android:importantForAccessibility="no"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/bg_widget_knob_on"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

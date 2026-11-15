@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper">#F3EFE6</color>
+    <color name="paper_dim">#E7E2D6</color>
+    <color name="paper_muted">#A9A496</color>
+    <color name="ink">#1C1B19</color>
+    <color name="ink_muted">#6B675E</color>
+    <color name="hairline">#D3CDBF</color>
+    <color name="ink_raised">#34322E</color>
+    <!-- The one color, so the app visibly loses it when grayscale is on. Android 12+ uses the system palette (values-v31). -->
+    <color name="accent">#2E5A88</color>
+    <color name="on_accent_muted">#CAD7E6</color>
+
+    <!-- Widget: follows the system theme only; on/off shows in the switch, not the surface. -->
+    <color name="widget_surface">@color/paper</color>
+    <color name="widget_on_surface">@color/ink</color>
+    <color name="widget_on_surface_muted">@color/ink_muted</color>
+    <color name="widget_chip">@color/paper_dim</color>
+</resources>

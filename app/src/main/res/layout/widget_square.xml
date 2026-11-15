@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1×1: the page glyph with a small pill switch underneath. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget"
+    android:clipToOutline="true"
+    tools:targetApi="31"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/widget_icon"
+        android:layout_width="22dp"
+        android:layout_height="30dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_page"
+        android:tint="@color/widget_on_surface" />
+
+    <FrameLayout
+        android:id="@+id/widget_track"
+        android:layout_width="32dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_widget_track_off"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/widget_knob_off"
+            android:importantForAccessibility="no"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="@drawable/bg_widget_knob_off" />
+
+        <ImageView
+            android:id="@+id/widget_knob_on"
+            android:importantForAccessibility="no"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/bg_widget_knob_on"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

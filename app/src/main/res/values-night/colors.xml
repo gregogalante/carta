@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Only the widget follows the dark theme; the app itself stays on paper. -->
+    <color name="widget_surface">@color/ink</color>
+    <color name="widget_on_surface">@color/paper</color>
+    <color name="widget_on_surface_muted">@color/paper_muted</color>
+    <color name="widget_chip">@color/ink_raised</color>
+</resources>

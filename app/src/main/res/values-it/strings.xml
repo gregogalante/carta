@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Il tuo schermo, quieto come una pagina stampata.</string>
+    <string name="a11y_description">Disegna una texture carta sopra lo schermo per imitare un display e-ink. Non legge il contenuto dello schermo.</string>
+
+    <string name="hero_title_on">Carta è attiva</string>
+    <string name="hero_title_off">Carta è spenta</string>
+    <string name="hero_summary_off">Tocca per trasformare lo schermo in carta.</string>
+
+    <string name="section_effects">Effetti</string>
+    <string name="effect_grayscale_title">Scala di grigi</string>
+    <string name="effect_grayscale_description">Toglie il colore a tutto lo schermo, come inchiostro su carta.</string>
+    <string name="effect_no_animations_title">Movimento fermo</string>
+    <string name="effect_no_animations_description">Spegne le animazioni di sistema: le schermate cambiano all’istante.</string>
+    <string name="effect_paper_title">Texture carta</string>
+    <string name="effect_paper_description">Aggiunge una tinta calda e una grana leggera su tutto.</string>
+    <string name="effect_wallpaper_title">Sfondo neutro</string>
+    <string name="effect_wallpaper_description">Carta col tema chiaro, inchiostro col tema scuro. Il tuo sfondo torna quando lo spegni.</string>
+    <string name="short_grayscale">Grigi</string>
+    <string name="short_no_animations">Fermo</string>
+    <string name="short_paper">Texture</string>
+    <string name="short_wallpaper">Sfondo</string>
+
+    <string name="paper_intensity_title">Intensità texture</string>
+
+    <string name="section_setup">Configurazione</string>
+    <string name="setup_secure_title">Permesso di sistema</string>
+    <string name="setup_secure_pending">Serve per scala di grigi e movimento fermo. Esegui una volta da computer, con il telefono collegato:</string>
+    <string name="setup_secure_done">Concesso. Scala di grigi e movimento fermo sono disponibili.</string>
+    <string name="setup_service_title">Servizio texture</string>
+    <string name="setup_service_pending">Serve per disegnare la texture carta. Attiva Carta tra i servizi di accessibilità.</string>
+    <string name="setup_service_done">Attivo. La texture carta può essere disegnata sopra ogni app.</string>
+    <string name="setup_service_action">Apri impostazioni accessibilità</string>
+    <string name="setup_files_title">Accesso ai file</string>
+    <string name="setup_files_pending">Serve per salvare il tuo sfondo e rimetterlo dopo. Android lo consente solo con l’accesso a tutti i file.</string>
+    <string name="setup_files_done">Concesso. Il tuo sfondo viene salvato prima di cambiarlo.</string>
+    <string name="setup_files_action">Concedi accesso</string>
+
+    <string name="missing_permission">Prima concedi il permesso di sistema, vedi Configurazione.</string>
+    <string name="missing_files_access">Prima concedi l’accesso ai file, vedi Configurazione.</string>
+
+    <string name="widget_label">Interruttore Carta</string>
+    <string name="widget_description">Attiva e spegni Carta dalla schermata Home.</string>
+    <string name="widget_state_on">Attiva</string>
+    <string name="widget_state_off">Spenta</string>
+</resources>

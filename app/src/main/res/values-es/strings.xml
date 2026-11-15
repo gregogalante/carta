@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Tu pantalla, tranquila como una página impresa.</string>
+    <string name="a11y_description">Dibuja una textura de papel sobre la pantalla para imitar una pantalla de tinta electrónica. No lee el contenido de la pantalla.</string>
+
+    <string name="hero_title_on">Carta está activada</string>
+    <string name="hero_title_off">Carta está desactivada</string>
+    <string name="hero_summary_off">Toca para convertir tu pantalla en papel.</string>
+
+    <string name="section_effects">Efectos</string>
+    <string name="effect_grayscale_title">Escala de grises</string>
+    <string name="effect_grayscale_description">Quita el color de toda la pantalla, como tinta sobre papel.</string>
+    <string name="effect_no_animations_title">Movimiento quieto</string>
+    <string name="effect_no_animations_description">Desactiva las animaciones del sistema: las pantallas cambian al instante.</string>
+    <string name="effect_paper_title">Textura de papel</string>
+    <string name="effect_paper_description">Añade un tono cálido y un grano sutil sobre todo.</string>
+    <string name="effect_wallpaper_title">Fondo neutro</string>
+    <string name="effect_wallpaper_description">Papel con el tema claro, tinta con el oscuro. Tu fondo vuelve cuando lo desactivas.</string>
+    <string name="short_grayscale">Grises</string>
+    <string name="short_no_animations">Quieto</string>
+    <string name="short_paper">Textura</string>
+    <string name="short_wallpaper">Fondo</string>
+
+    <string name="paper_intensity_title">Intensidad de la textura</string>
+
+    <string name="section_setup">Configuración</string>
+    <string name="setup_secure_title">Permiso del sistema</string>
+    <string name="setup_secure_pending">Necesario para la escala de grises y el movimiento quieto. Ejecútalo una vez desde un ordenador con el teléfono conectado:</string>
+    <string name="setup_secure_done">Concedido. La escala de grises y el movimiento quieto están disponibles.</string>
+    <string name="setup_service_title">Servicio de textura</string>
+    <string name="setup_service_pending">Necesario para dibujar la textura de papel. Activa Carta entre los servicios de accesibilidad.</string>
+    <string name="setup_service_done">Activo. La textura de papel puede dibujarse sobre cualquier app.</string>
+    <string name="setup_service_action">Abrir ajustes de accesibilidad</string>
+    <string name="setup_files_title">Acceso a archivos</string>
+    <string name="setup_files_pending">Necesario para guardar tu fondo y restaurarlo después. Android solo lo permite con el acceso a todos los archivos.</string>
+    <string name="setup_files_done">Concedido. Tu fondo se guarda antes de cambiarlo.</string>
+    <string name="setup_files_action">Conceder acceso</string>
+
+    <string name="missing_permission">Primero concede el permiso del sistema, ver Configuración.</string>
+    <string name="missing_files_access">Primero concede el acceso a archivos, ver Configuración.</string>
+
+    <string name="widget_label">Interruptor de Carta</string>
+    <string name="widget_description">Activa y desactiva Carta desde la pantalla de inicio.</string>
+    <string name="widget_state_on">Activada</string>
+    <string name="widget_state_off">Desactivada</string>
+</resources>

@@ -60,7 +60,10 @@ class EinkMode(private val context: Context) {
         if (on && !granted) return false
         if (!granted) return true // Nothing was applied, so there is nothing to undo.
         return when (toggle) {
-            Toggle.GRAYSCALE, Toggle.WARM_LIGHT, Toggle.EXTRA_DIM, Toggle.BOLD_TEXT, Toggle.NO_ANIMATIONS ->
+            Toggle.WARM_LIGHT -> secureSettings.set(toggle, on).also { applied ->
+                if (on && applied) WarmLightSchedule.schedule(context) else WarmLightSchedule.cancel(context)
+            }
+            Toggle.GRAYSCALE, Toggle.EXTRA_DIM, Toggle.BOLD_TEXT, Toggle.NO_ANIMATIONS ->
                 secureSettings.set(toggle, on)
             Toggle.WALLPAPER ->
                 if (on) {

@@ -11,7 +11,7 @@
     <string name="effect_grayscale_title">Niveaux de gris</string>
     <string name="effect_grayscale_description">Retire la couleur de tout l’écran, comme de l’encre sur du papier.</string>
     <string name="effect_warm_light_title">Lumière chaude</string>
-    <string name="effect_warm_light_description">Filtre la lumière bleue, comme du papier sous une lampe de lecture. Votre Éclairage nocturne, s’il est plus chaud, est conservé.</string>
+    <string name="effect_warm_light_description">Filtre la lumière bleue : presque neutre comme le papier le jour, plus chaude comme une lampe le soir. Votre Éclairage nocturne, s’il est plus chaud, est conservé.</string>
     <string name="effect_extra_dim_title">Luminosité ultra-réduite</string>
     <string name="effect_extra_dim_description">Assombrit les blancs sous la luminosité minimale : le papier reflète la lumière, il n’en émet pas. L’intensité se règle dans les paramètres d’Android.</string>
     <string name="effect_bold_text_title">Texte en gras</string>

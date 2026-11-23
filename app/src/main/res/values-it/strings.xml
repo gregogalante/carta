@@ -11,7 +11,7 @@
     <string name="effect_grayscale_title">Scala di grigi</string>
     <string name="effect_grayscale_description">Toglie il colore a tutto lo schermo, come inchiostro su carta.</string>
     <string name="effect_warm_light_title">Luce calda</string>
-    <string name="effect_warm_light_description">Filtra la luce blu, come carta sotto una lampada da lettura. Se la tua Luce notturna è già più calda, resta com’è.</string>
+    <string name="effect_warm_light_description">Filtra la luce blu: quasi neutra come carta di giorno, più calda come una lampada la sera. Se la tua Luce notturna è più calda, resta com’è.</string>
     <string name="effect_extra_dim_title">Luminosità extra ridotta</string>
     <string name="effect_extra_dim_description">Abbassa i bianchi sotto la luminosità minima: la carta riflette la luce, non la emette. L’intensità si regola nelle impostazioni di Android.</string>
     <string name="effect_bold_text_title">Testo in grassetto</string>

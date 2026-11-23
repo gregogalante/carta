@@ -18,7 +18,7 @@
     <string name="effect_grayscale_title">Grayscale</string>
     <string name="effect_grayscale_description">Removes color from the whole screen, like ink on paper.</string>
     <string name="effect_warm_light_title">Warm light</string>
-    <string name="effect_warm_light_description">Filters out blue light, like paper under a reading lamp. A warmer Night Light of yours is kept.</string>
+    <string name="effect_warm_light_description">Filters out blue light: close to paper by day, warmer like a lamp in the evening. A warmer Night Light of yours is kept.</string>
     <string name="effect_extra_dim_title">Extra dim</string>
     <string name="effect_extra_dim_description">Dims whites below the usual minimum brightness: paper reflects light, it does not shine. Strength is set in Android’s settings.</string>
     <string name="effect_bold_text_title">Bold text</string>

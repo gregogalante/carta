@@ -11,7 +11,7 @@
     <string name="effect_grayscale_title">Graustufen</string>
     <string name="effect_grayscale_description">Entfernt die Farbe vom ganzen Bildschirm, wie Tinte auf Papier.</string>
     <string name="effect_warm_light_title">Warmes Licht</string>
-    <string name="effect_warm_light_description">Filtert blaues Licht, wie Papier unter einer Leselampe. Ein wärmeres Nachtlicht von dir bleibt erhalten.</string>
+    <string name="effect_warm_light_description">Filtert blaues Licht: tagsüber fast neutral wie Papier, abends wärmer wie eine Lampe. Ein wärmeres Nachtlicht von dir bleibt erhalten.</string>
     <string name="effect_extra_dim_title">Extradunkel</string>
     <string name="effect_extra_dim_description">Dimmt Weiß unter die minimale Helligkeit: Papier reflektiert Licht, es leuchtet nicht. Die Stärke stellst du in den Android-Einstellungen ein.</string>
     <string name="effect_bold_text_title">Fettschrift</string>

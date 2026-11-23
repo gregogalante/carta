@@ -11,7 +11,7 @@
     <string name="effect_grayscale_title">Escala de grises</string>
     <string name="effect_grayscale_description">Quita el color de toda la pantalla, como tinta sobre papel.</string>
     <string name="effect_warm_light_title">Luz cálida</string>
-    <string name="effect_warm_light_description">Filtra la luz azul, como papel bajo una lámpara de lectura. Si tu Luz nocturna ya es más cálida, se mantiene.</string>
+    <string name="effect_warm_light_description">Filtra la luz azul: casi neutra como el papel de día, más cálida como una lámpara por la noche. Si tu Luz nocturna es más cálida, se mantiene.</string>
     <string name="effect_extra_dim_title">Atenuación extra</string>
     <string name="effect_extra_dim_description">Baja los blancos por debajo del brillo mínimo: el papel refleja la luz, no la emite. La intensidad se ajusta en los ajustes de Android.</string>
     <string name="effect_bold_text_title">Texto en negrita</string>

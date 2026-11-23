@@ -44,12 +44,14 @@ class EinkOverlayService : AccessibilityService(), SharedPreferences.OnSharedPre
     }
 
     private fun syncOverlay() {
-        if (!prefs.isOn(Toggle.PAPER)) return removeOverlay()
+        val intensity = if (prefs.isOn(Toggle.PAPER)) prefs.paperIntensity(isDarkTheme()) / 100f else 0f
+        // Nothing to draw: no window, so the compositor has no extra layer to read every frame.
+        if (intensity == 0f) return removeOverlay()
         val view = overlay ?: PaperOverlayView(this).also {
             windowManager.addView(it, overlayParams())
             overlay = it
         }
-        view.intensity = prefs.paperIntensity(isDarkTheme()) / 100f
+        view.intensity = intensity
     }
 
     private fun removeOverlay() {

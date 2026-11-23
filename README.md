@@ -9,7 +9,7 @@ Carta makes a phone look and feel closer to an e-ink reader. You pick the effect
 | Effect | What it does | Needs |
 |---|---|---|
 | Grayscale | Removes color from the whole screen, using Android's own color correction. | System permission (one adb command) |
-| Warm light | Filters out blue light with Android's Night Light, at a paper-like warmth. A warmer Night Light of yours is kept. | System permission (one adb command) |
+| Warm light | Filters out blue light with Android's Night Light: close to paper by day, warmer in the evening (19:00 to 21:00, back by 8:00). A warmer Night Light of yours is kept. | System permission (one adb command) |
 | Extra dim | Dims whites below the usual minimum brightness, at the strength set in Android. Android 12+. | System permission (one adb command) |
 | Bold text | Android's bold text everywhere, for full, print-like letters. Android 12+. | System permission (one adb command) |
 | Still motion | Turns off system animations, so screens change instantly. | System permission (one adb command) |

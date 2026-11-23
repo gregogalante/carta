@@ -11,7 +11,7 @@
     <string name="effect_grayscale_title">Escala de cinza</string>
     <string name="effect_grayscale_description">Remove a cor de toda a tela, como tinta no papel.</string>
     <string name="effect_warm_light_title">Luz quente</string>
-    <string name="effect_warm_light_description">Filtra a luz azul, como papel sob uma luminária de leitura. Se o seu Modo noturno já for mais quente, ele é mantido.</string>
+    <string name="effect_warm_light_description">Filtra a luz azul: quase neutra como papel de dia, mais quente como uma luminária à noite. Se o seu Modo noturno for mais quente, ele é mantido.</string>
     <string name="effect_extra_dim_title">Escurecimento extra</string>
     <string name="effect_extra_dim_description">Reduz os brancos abaixo do brilho mínimo: o papel reflete a luz, não a emite. A intensidade é ajustada nas configurações do Android.</string>
     <string name="effect_bold_text_title">Texto em negrito</string>

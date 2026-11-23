@@ -7,6 +7,8 @@
         android:name="android.permission.WRITE_SECURE_SETTINGS"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!-- Alarms do not survive a reboot: the warm light schedule is picked up again after one. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!-- Only way for a third-party app to read the current wallpaper (to restore it) on Android 14+. -->
     <uses-permission
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
@@ -39,6 +41,14 @@
                 android:name="android.accessibilityservice"
                 android:resource="@xml/accessibility_service" />
         </service>
+
+        <receiver
+            android:name=".WarmLightSchedule$Receiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <receiver
             android:name=".EinkWidget"

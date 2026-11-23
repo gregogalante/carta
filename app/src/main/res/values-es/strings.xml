@@ -10,13 +10,22 @@
     <string name="section_effects">Efectos</string>
     <string name="effect_grayscale_title">Escala de grises</string>
     <string name="effect_grayscale_description">Quita el color de toda la pantalla, como tinta sobre papel.</string>
+    <string name="effect_warm_light_title">Luz cálida</string>
+    <string name="effect_warm_light_description">Filtra la luz azul, como papel bajo una lámpara de lectura. Si tu Luz nocturna ya es más cálida, se mantiene.</string>
+    <string name="effect_extra_dim_title">Atenuación extra</string>
+    <string name="effect_extra_dim_description">Baja los blancos por debajo del brillo mínimo: el papel refleja la luz, no la emite. La intensidad se ajusta en los ajustes de Android.</string>
+    <string name="effect_bold_text_title">Texto en negrita</string>
+    <string name="effect_bold_text_description">Letras más gruesas en todas partes, llenas y nítidas como en papel impreso.</string>
     <string name="effect_no_animations_title">Movimiento quieto</string>
     <string name="effect_no_animations_description">Desactiva las animaciones del sistema: las pantallas cambian al instante.</string>
     <string name="effect_paper_title">Textura de papel</string>
-    <string name="effect_paper_description">Añade un tono cálido y un grano sutil sobre todo.</string>
+    <string name="effect_paper_description">Añade la textura del papel y suaviza el negro puro, como tinta en una página.</string>
     <string name="effect_wallpaper_title">Fondo neutro</string>
     <string name="effect_wallpaper_description">Papel con el tema claro, tinta con el oscuro. Tu fondo vuelve cuando lo desactivas.</string>
     <string name="short_grayscale">Grises</string>
+    <string name="short_warm_light">Cálida</string>
+    <string name="short_extra_dim">Atenuado</string>
+    <string name="short_bold_text">Negrita</string>
     <string name="short_no_animations">Quieto</string>
     <string name="short_paper">Textura</string>
     <string name="short_wallpaper">Fondo</string>
@@ -25,7 +34,7 @@
 
     <string name="section_setup">Configuración</string>
     <string name="setup_secure_title">Permiso del sistema</string>
-    <string name="setup_secure_pending">Necesario para la escala de grises y el movimiento quieto. Ejecútalo una vez desde un ordenador con el teléfono conectado:</string>
+    <string name="setup_secure_pending">Necesario para la escala de grises, la luz cálida, la atenuación extra, la negrita y el movimiento quieto. Ejecútalo una vez desde un ordenador con el teléfono conectado:</string>
     <string name="setup_secure_done">Concedido. La escala de grises y el movimiento quieto están disponibles.</string>
     <string name="setup_service_title">Servicio de textura</string>
     <string name="setup_service_pending">Necesario para dibujar la textura de papel. Activa Carta entre los servicios de accesibilidad.</string>

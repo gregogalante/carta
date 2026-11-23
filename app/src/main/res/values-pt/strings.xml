@@ -10,13 +10,22 @@
     <string name="section_effects">Efeitos</string>
     <string name="effect_grayscale_title">Escala de cinza</string>
     <string name="effect_grayscale_description">Remove a cor de toda a tela, como tinta no papel.</string>
+    <string name="effect_warm_light_title">Luz quente</string>
+    <string name="effect_warm_light_description">Filtra a luz azul, como papel sob uma luminária de leitura. Se o seu Modo noturno já for mais quente, ele é mantido.</string>
+    <string name="effect_extra_dim_title">Escurecimento extra</string>
+    <string name="effect_extra_dim_description">Reduz os brancos abaixo do brilho mínimo: o papel reflete a luz, não a emite. A intensidade é ajustada nas configurações do Android.</string>
+    <string name="effect_bold_text_title">Texto em negrito</string>
+    <string name="effect_bold_text_description">Letras mais grossas em todo lugar, cheias e nítidas como impressas.</string>
     <string name="effect_no_animations_title">Movimento parado</string>
     <string name="effect_no_animations_description">Desativa as animações do sistema: as telas mudam na hora.</string>
     <string name="effect_paper_title">Textura de papel</string>
-    <string name="effect_paper_description">Adiciona um tom quente e um grão sutil em tudo.</string>
+    <string name="effect_paper_description">Adiciona a textura do papel e suaviza o preto puro, como tinta numa página.</string>
     <string name="effect_wallpaper_title">Fundo neutro</string>
     <string name="effect_wallpaper_description">Papel com o tema claro, tinta com o escuro. Seu fundo volta quando você desliga.</string>
     <string name="short_grayscale">Cinza</string>
+    <string name="short_warm_light">Quente</string>
+    <string name="short_extra_dim">Escuro</string>
+    <string name="short_bold_text">Negrito</string>
     <string name="short_no_animations">Parado</string>
     <string name="short_paper">Textura</string>
     <string name="short_wallpaper">Fundo</string>
@@ -25,7 +34,7 @@
 
     <string name="section_setup">Configuração</string>
     <string name="setup_secure_title">Permissão do sistema</string>
-    <string name="setup_secure_pending">Necessária para a escala de cinza e o movimento parado. Execute uma vez em um computador com o celular conectado:</string>
+    <string name="setup_secure_pending">Necessária para a escala de cinza, a luz quente, o escurecimento extra, o negrito e o movimento parado. Execute uma vez em um computador com o celular conectado:</string>
     <string name="setup_secure_done">Concedida. Escala de cinza e movimento parado disponíveis.</string>
     <string name="setup_service_title">Serviço de textura</string>
     <string name="setup_service_pending">Necessário para desenhar a textura de papel. Ative o Carta nos serviços de acessibilidade.</string>

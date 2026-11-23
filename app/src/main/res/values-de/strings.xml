@@ -10,13 +10,22 @@
     <string name="section_effects">Effekte</string>
     <string name="effect_grayscale_title">Graustufen</string>
     <string name="effect_grayscale_description">Entfernt die Farbe vom ganzen Bildschirm, wie Tinte auf Papier.</string>
+    <string name="effect_warm_light_title">Warmes Licht</string>
+    <string name="effect_warm_light_description">Filtert blaues Licht, wie Papier unter einer Leselampe. Ein wärmeres Nachtlicht von dir bleibt erhalten.</string>
+    <string name="effect_extra_dim_title">Extradunkel</string>
+    <string name="effect_extra_dim_description">Dimmt Weiß unter die minimale Helligkeit: Papier reflektiert Licht, es leuchtet nicht. Die Stärke stellst du in den Android-Einstellungen ein.</string>
+    <string name="effect_bold_text_title">Fettschrift</string>
+    <string name="effect_bold_text_description">Dickere Buchstaben überall, voll und scharf wie gedruckt.</string>
     <string name="effect_no_animations_title">Animationen aus</string>
     <string name="effect_no_animations_description">Schaltet Systemanimationen aus: Bildschirme wechseln sofort.</string>
     <string name="effect_paper_title">Papiertextur</string>
-    <string name="effect_paper_description">Fügt überall einen warmen Ton und eine feine Körnung hinzu.</string>
+    <string name="effect_paper_description">Fügt Papierstruktur hinzu und mildert reines Schwarz, wie Tinte auf einer Seite.</string>
     <string name="effect_wallpaper_title">Neutraler Hintergrund</string>
     <string name="effect_wallpaper_description">Papier beim hellen Design, Tinte beim dunklen. Dein Hintergrund kommt zurück, wenn du es ausschaltest.</string>
     <string name="short_grayscale">Grau</string>
+    <string name="short_warm_light">Warm</string>
+    <string name="short_extra_dim">Dunkel</string>
+    <string name="short_bold_text">Fett</string>
     <string name="short_no_animations">Ruhig</string>
     <string name="short_paper">Textur</string>
     <string name="short_wallpaper">Hintergrund</string>
@@ -25,7 +34,7 @@
 
     <string name="section_setup">Einrichtung</string>
     <string name="setup_secure_title">Systemberechtigung</string>
-    <string name="setup_secure_pending">Nötig für Graustufen und „Animationen aus“. Einmal von einem Computer mit verbundenem Telefon ausführen:</string>
+    <string name="setup_secure_pending">Nötig für Graustufen, warmes Licht, Extradunkel, Fettschrift und „Animationen aus“. Einmal von einem Computer mit verbundenem Telefon ausführen:</string>
     <string name="setup_secure_done">Erteilt. Graustufen und „Animationen aus“ sind verfügbar.</string>
     <string name="setup_service_title">Texturdienst</string>
     <string name="setup_service_pending">Nötig, um die Papiertextur zu zeichnen. Aktiviere Carta unter den Bedienungshilfen.</string>

@@ -10,13 +10,22 @@
     <string name="section_effects">Effetti</string>
     <string name="effect_grayscale_title">Scala di grigi</string>
     <string name="effect_grayscale_description">Toglie il colore a tutto lo schermo, come inchiostro su carta.</string>
+    <string name="effect_warm_light_title">Luce calda</string>
+    <string name="effect_warm_light_description">Filtra la luce blu, come carta sotto una lampada da lettura. Se la tua Luce notturna è già più calda, resta com’è.</string>
+    <string name="effect_extra_dim_title">Luminosità extra ridotta</string>
+    <string name="effect_extra_dim_description">Abbassa i bianchi sotto la luminosità minima: la carta riflette la luce, non la emette. L’intensità si regola nelle impostazioni di Android.</string>
+    <string name="effect_bold_text_title">Testo in grassetto</string>
+    <string name="effect_bold_text_description">Lettere più spesse ovunque, piene e nette come in stampa.</string>
     <string name="effect_no_animations_title">Movimento fermo</string>
     <string name="effect_no_animations_description">Spegne le animazioni di sistema: le schermate cambiano all’istante.</string>
     <string name="effect_paper_title">Texture carta</string>
-    <string name="effect_paper_description">Aggiunge una tinta calda e una grana leggera su tutto.</string>
+    <string name="effect_paper_description">Aggiunge la grana della carta e ammorbidisce il nero puro, come inchiostro su una pagina.</string>
     <string name="effect_wallpaper_title">Sfondo neutro</string>
     <string name="effect_wallpaper_description">Carta col tema chiaro, inchiostro col tema scuro. Il tuo sfondo torna quando lo spegni.</string>
     <string name="short_grayscale">Grigi</string>
+    <string name="short_warm_light">Calda</string>
+    <string name="short_extra_dim">Attenuato</string>
+    <string name="short_bold_text">Grassetto</string>
     <string name="short_no_animations">Fermo</string>
     <string name="short_paper">Texture</string>
     <string name="short_wallpaper">Sfondo</string>
@@ -25,7 +34,7 @@
 
     <string name="section_setup">Configurazione</string>
     <string name="setup_secure_title">Permesso di sistema</string>
-    <string name="setup_secure_pending">Serve per scala di grigi e movimento fermo. Esegui una volta da computer, con il telefono collegato:</string>
+    <string name="setup_secure_pending">Serve per scala di grigi, luce calda, luminosità ridotta, grassetto e movimento fermo. Esegui una volta da computer, con il telefono collegato:</string>
     <string name="setup_secure_done">Concesso. Scala di grigi e movimento fermo sono disponibili.</string>
     <string name="setup_service_title">Servizio texture</string>
     <string name="setup_service_pending">Serve per disegnare la texture carta. Attiva Carta tra i servizi di accessibilità.</string>

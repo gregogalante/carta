@@ -25,10 +25,12 @@ class EinkOverlayService : AccessibilityService(), SharedPreferences.OnSharedPre
 
     override fun onSharedPreferenceChanged(prefs: SharedPreferences, key: String?) = syncOverlay()
 
-    // The service is the long-lived component, so it keeps the wallpaper in step with dark/light switches.
+    // The service is the long-lived component, so it keeps the wallpaper and the automatic texture
+    // intensity in step with dark/light switches.
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
         NeutralWallpaper(this).followTheme(isDarkTheme())
+        syncOverlay()
     }
 
     override fun onAccessibilityEvent(event: AccessibilityEvent) = Unit
@@ -47,7 +49,7 @@ class EinkOverlayService : AccessibilityService(), SharedPreferences.OnSharedPre
             windowManager.addView(it, overlayParams())
             overlay = it
         }
-        view.intensity = prefs.paperIntensity() / 100f
+        view.intensity = prefs.paperIntensity(isDarkTheme()) / 100f
     }
 
     private fun removeOverlay() {

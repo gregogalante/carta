@@ -45,7 +45,7 @@ class MainActivity : Activity() {
         val effects = findViewById<LinearLayout>(R.id.effects)
         val intensityRow = findViewById<View>(R.id.intensity_row)
         (intensityRow.parent as ViewGroup).removeView(intensityRow)
-        Toggle.entries.forEach {
+        Toggle.supported.forEach {
             effects.addView(effectRow(effects, it))
             // The slider belongs right under the effect it tunes.
             if (it == Toggle.PAPER) effects.addView(intensityRow)
@@ -107,7 +107,7 @@ class MainActivity : Activity() {
         val autoChip = findViewById<TextView>(R.id.intensity_auto)
         val slider = findViewById<SeekBar>(R.id.intensity)
         val show = {
-            slider.progress = prefs.paperIntensity()
+            slider.progress = prefs.paperIntensity(isDarkTheme())
             value.text = getString(R.string.paper_intensity_value, slider.progress)
             autoChip.isActivated = prefs.isPaperIntensityAuto()
         }
@@ -154,7 +154,7 @@ class MainActivity : Activity() {
     }
 
     private fun refreshEffects() {
-        Toggle.entries.forEach { showSwitch(it, mode.isSelected(it)) }
+        Toggle.supported.forEach { showSwitch(it, mode.isSelected(it)) }
         refreshHero()
         // Tunable while Carta is off too, as long as the texture is part of the configuration.
         val paperSelected = mode.isSelected(Toggle.PAPER)

@@ -2,6 +2,7 @@ package com.gregoriogalante.carta
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.os.Build
 
 /** What the user must grant before an effect can be turned on. */
 enum class Requirement { NONE, SECURE_SETTINGS, ALL_FILES }
@@ -12,10 +13,23 @@ enum class Toggle(
     val description: Int,
     val shortLabel: Int,
     val requirement: Requirement,
+    val minSdk: Int = Build.VERSION_CODES.R,
 ) {
     GRAYSCALE(
         "grayscale", R.string.effect_grayscale_title, R.string.effect_grayscale_description,
         R.string.short_grayscale, Requirement.SECURE_SETTINGS,
+    ),
+    WARM_LIGHT(
+        "warm_light", R.string.effect_warm_light_title, R.string.effect_warm_light_description,
+        R.string.short_warm_light, Requirement.SECURE_SETTINGS,
+    ),
+    EXTRA_DIM(
+        "extra_dim", R.string.effect_extra_dim_title, R.string.effect_extra_dim_description,
+        R.string.short_extra_dim, Requirement.SECURE_SETTINGS, Build.VERSION_CODES.S,
+    ),
+    BOLD_TEXT(
+        "bold_text", R.string.effect_bold_text_title, R.string.effect_bold_text_description,
+        R.string.short_bold_text, Requirement.SECURE_SETTINGS, Build.VERSION_CODES.S,
     ),
     NO_ANIMATIONS(
         "no_animations", R.string.effect_no_animations_title, R.string.effect_no_animations_description,
@@ -29,6 +43,12 @@ enum class Toggle(
         "wallpaper", R.string.effect_wallpaper_title, R.string.effect_wallpaper_description,
         R.string.short_wallpaper, Requirement.ALL_FILES,
     ),
+    ;
+
+    companion object {
+        /** Effects this Android version can apply; the others are never shown. */
+        val supported = entries.filter { Build.VERSION.SDK_INT >= it.minSdk }
+    }
 }
 
 fun Context.einkPrefs(): SharedPreferences =
@@ -68,10 +88,16 @@ private fun SharedPreferences.migrateLegacyState() {
 
 const val PAPER_INTENSITY_KEY = "paper_intensity"
 const val PAPER_INTENSITY_AUTO_KEY = "paper_intensity_auto"
-const val PAPER_INTENSITY_SUGGESTED = 35
+/**
+ * A dark theme is mostly black, where the grain cannot show and the lifted blacks read as a gray
+ * veil over everything; a light theme is mostly white, where the grain is the paper.
+ */
+fun suggestedPaperIntensity(darkTheme: Boolean) = if (darkTheme) 30 else 60
 
 fun SharedPreferences.isPaperIntensityAuto() = getBoolean(PAPER_INTENSITY_AUTO_KEY, true)
 
 /** Texture strength as a 0..100 percentage: the suggested value while in auto, otherwise the user's. */
-fun SharedPreferences.paperIntensity() =
-    if (isPaperIntensityAuto()) PAPER_INTENSITY_SUGGESTED else getInt(PAPER_INTENSITY_KEY, PAPER_INTENSITY_SUGGESTED)
+fun SharedPreferences.paperIntensity(darkTheme: Boolean): Int {
+    val suggested = suggestedPaperIntensity(darkTheme)
+    return if (isPaperIntensityAuto()) suggested else getInt(PAPER_INTENSITY_KEY, suggested)
+}

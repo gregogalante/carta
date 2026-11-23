@@ -17,13 +17,22 @@
     <string name="section_effects">Effects</string>
     <string name="effect_grayscale_title">Grayscale</string>
     <string name="effect_grayscale_description">Removes color from the whole screen, like ink on paper.</string>
+    <string name="effect_warm_light_title">Warm light</string>
+    <string name="effect_warm_light_description">Filters out blue light, like paper under a reading lamp. A warmer Night Light of yours is kept.</string>
+    <string name="effect_extra_dim_title">Extra dim</string>
+    <string name="effect_extra_dim_description">Dims whites below the usual minimum brightness: paper reflects light, it does not shine. Strength is set in Android’s settings.</string>
+    <string name="effect_bold_text_title">Bold text</string>
+    <string name="effect_bold_text_description">Thicker letters everywhere, full and sharp like print.</string>
     <string name="effect_no_animations_title">Still motion</string>
     <string name="effect_no_animations_description">Turns off system animations: screens change instantly.</string>
     <string name="effect_paper_title">Paper texture</string>
-    <string name="effect_paper_description">Adds a warm tint and a subtle grain over everything.</string>
+    <string name="effect_paper_description">Adds a paper grain and softens pure black, like ink on a page.</string>
     <string name="effect_wallpaper_title">Neutral wallpaper</string>
     <string name="effect_wallpaper_description">Paper with the light theme, ink with the dark one. Your wallpaper comes back when you turn it off.</string>
     <string name="short_grayscale">Grayscale</string>
+    <string name="short_warm_light">Warm</string>
+    <string name="short_extra_dim">Dim</string>
+    <string name="short_bold_text">Bold</string>
     <string name="short_no_animations">Still</string>
     <string name="short_paper">Texture</string>
     <string name="short_wallpaper">Wallpaper</string>
@@ -32,7 +41,7 @@
 
     <string name="section_setup">Setup</string>
     <string name="setup_secure_title">System permission</string>
-    <string name="setup_secure_pending">Needed for grayscale and still motion. Run this once from a computer with the phone connected:</string>
+    <string name="setup_secure_pending">Needed for grayscale, warm light, extra dim, bold text and still motion. Run this once from a computer with the phone connected:</string>
     <string name="setup_secure_done">Granted. Grayscale and still motion are available.</string>
     <string name="setup_service_title">Texture service</string>
     <string name="setup_service_pending">Needed to draw the paper texture. Enable Carta among the accessibility services.</string>

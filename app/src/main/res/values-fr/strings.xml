@@ -10,13 +10,22 @@
     <string name="section_effects">Effets</string>
     <string name="effect_grayscale_title">Niveaux de gris</string>
     <string name="effect_grayscale_description">Retire la couleur de tout l’écran, comme de l’encre sur du papier.</string>
+    <string name="effect_warm_light_title">Lumière chaude</string>
+    <string name="effect_warm_light_description">Filtre la lumière bleue, comme du papier sous une lampe de lecture. Votre Éclairage nocturne, s’il est plus chaud, est conservé.</string>
+    <string name="effect_extra_dim_title">Luminosité ultra-réduite</string>
+    <string name="effect_extra_dim_description">Assombrit les blancs sous la luminosité minimale : le papier reflète la lumière, il n’en émet pas. L’intensité se règle dans les paramètres d’Android.</string>
+    <string name="effect_bold_text_title">Texte en gras</string>
+    <string name="effect_bold_text_description">Des lettres plus épaisses partout, pleines et nettes comme à l’impression.</string>
     <string name="effect_no_animations_title">Mouvement figé</string>
     <string name="effect_no_animations_description">Désactive les animations du système : les écrans changent instantanément.</string>
     <string name="effect_paper_title">Texture papier</string>
-    <string name="effect_paper_description">Ajoute une teinte chaude et un grain léger sur tout l’écran.</string>
+    <string name="effect_paper_description">Ajoute le grain du papier et adoucit le noir pur, comme l’encre sur une page.</string>
     <string name="effect_wallpaper_title">Fond neutre</string>
     <string name="effect_wallpaper_description">Papier avec le thème clair, encre avec le sombre. Votre fond revient quand vous le désactivez.</string>
     <string name="short_grayscale">Gris</string>
+    <string name="short_warm_light">Chaude</string>
+    <string name="short_extra_dim">Atténué</string>
+    <string name="short_bold_text">Gras</string>
     <string name="short_no_animations">Figé</string>
     <string name="short_paper">Texture</string>
     <string name="short_wallpaper">Fond</string>
@@ -25,7 +34,7 @@
 
     <string name="section_setup">Configuration</string>
     <string name="setup_secure_title">Autorisation système</string>
-    <string name="setup_secure_pending">Nécessaire pour les niveaux de gris et le mouvement figé. Exécutez une fois depuis un ordinateur, téléphone connecté :</string>
+    <string name="setup_secure_pending">Nécessaire pour les niveaux de gris, la lumière chaude, la luminosité réduite, le gras et le mouvement figé. Exécutez une fois depuis un ordinateur, téléphone connecté :</string>
     <string name="setup_secure_done">Accordée. Niveaux de gris et mouvement figé disponibles.</string>
     <string name="setup_service_title">Service de texture</string>
     <string name="setup_service_pending">Nécessaire pour dessiner la texture papier. Activez Carta parmi les services d’accessibilité.</string>

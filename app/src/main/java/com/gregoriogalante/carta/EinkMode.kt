@@ -19,7 +19,7 @@ class EinkMode(private val context: Context) {
 
     fun isSelected(toggle: Toggle) = prefs.isSelected(toggle)
 
-    fun selectedToggles() = Toggle.entries.filter(prefs::isSelected)
+    fun selectedToggles() = Toggle.supported.filter(prefs::isSelected)
 
     fun isGranted(requirement: Requirement) = when (requirement) {
         Requirement.NONE -> true
@@ -47,7 +47,7 @@ class EinkMode(private val context: Context) {
         val turnOn = !isActive()
         // Nothing selected: fall back to the default configuration rather than a no-op "on".
         if (turnOn && selectedToggles().isEmpty()) {
-            prefs.edit().apply { Toggle.entries.forEach { putSelected(it, true) } }.apply()
+            prefs.edit().apply { Toggle.supported.forEach { putSelected(it, true) } }.apply()
         }
         val skipped = selectedToggles().filterNot { apply(it, turnOn, startActivity) }
         prefs.edit().putBoolean(ACTIVE_KEY, turnOn).apply()
@@ -60,10 +60,8 @@ class EinkMode(private val context: Context) {
         if (on && !granted) return false
         if (!granted) return true // Nothing was applied, so there is nothing to undo.
         return when (toggle) {
-            Toggle.GRAYSCALE, Toggle.NO_ANIMATIONS -> {
+            Toggle.GRAYSCALE, Toggle.WARM_LIGHT, Toggle.EXTRA_DIM, Toggle.BOLD_TEXT, Toggle.NO_ANIMATIONS ->
                 secureSettings.set(toggle, on)
-                true
-            }
             Toggle.WALLPAPER ->
                 if (on) {
                     wallpaper.apply(context.isDarkTheme())

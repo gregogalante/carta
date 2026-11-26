@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carta — your Android screen, as calm as a printed page</title>
+  <meta name="description" content="Carta makes an Android phone look and feel closer to an e-ink reader: grayscale, warm light, paper texture and more, toggled together with one tap.">
+  <meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1C1B19" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F3EFE6;
+      --paper-dim: #E7E2D6;
+      --ink: #1C1B19;
+      --ink-muted: #6B675E;
+      --hairline: #D3CDBF;
+      --accent: #2E5A88;
+      --on-accent: #F3EFE6;
+      --grain-opacity: .07;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #1C1B19;
+        --paper-dim: #34322E;
+        --ink: #F3EFE6;
+        --ink-muted: #A9A496;
+        --hairline: #3E3B36;
+        --accent: #9DB8D6;
+        --on-accent: #1C1B19;
+        --grain-opacity: .05;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 1.0625rem/1.6 Literata, Georgia, serif;
+      text-rendering: optimizeLegibility;
+    }
+    /* Same idea as the app's texture overlay: a fixed paper grain above everything. */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: var(--grain-opacity);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+    main, footer { max-width: 42rem; margin: 0 auto; padding: 0 1rem; }
+
+    .hero { padding: 5rem 0 3.5rem; text-align: center; }
+    .icon {
+      width: 96px; height: 96px; border-radius: 22px;
+      border: 1px solid var(--hairline);
+    }
+    h1 {
+      font-weight: 600; font-size: clamp(2.75rem, 9vw, 4rem);
+      line-height: 1; letter-spacing: -.02em; margin: 1.5rem 0 .75rem;
+    }
+    .tagline { font-style: italic; font-size: 1.3rem; color: var(--ink-muted); margin: 0 auto 2.25rem; max-width: 24rem; }
+
+    .cta {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .9rem 1.6rem; border-radius: 999px;
+      background: var(--accent); color: var(--on-accent);
+      font-weight: 600; font-size: 1.05rem; text-decoration: none;
+      transition: transform .15s ease;
+    }
+    .cta:hover { transform: translateY(-1px); }
+    .cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+    .cta svg { width: 1.15em; height: 1.15em; }
+    .meta { margin-top: .9rem; font-size: .9rem; color: var(--ink-muted); }
+
+    section { padding: 2.5rem 0; border-top: 1px solid var(--hairline); }
+    h2 { font-weight: 600; font-size: 1.5rem; margin: 0 0 1.25rem; }
+    .intro p:first-child::first-letter {
+      float: left; font-weight: 600; font-size: 3.6em; line-height: .85; margin: .08em .1em 0 0;
+    }
+
+    .effects { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.25rem; }
+    .effects li { display: grid; gap: .1rem; }
+    .effects strong { font-weight: 600; }
+    .effects span { color: var(--ink-muted); }
+
+    ol.steps { padding-left: 1.25rem; margin: 0; }
+    ol.steps li { margin-bottom: 1rem; padding-left: .25rem; }
+    pre {
+      margin: .6rem 0 0; padding: .85rem 1rem; border-radius: 10px;
+      background: var(--paper-dim); overflow-x: auto;
+      font: .82rem/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .note { color: var(--ink-muted); font-style: italic; }
+
+    footer { padding: 2rem 1rem 3rem; border-top: 1px solid var(--hairline); color: var(--ink-muted); font-size: .9rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <img class="icon" src="favicon.svg" alt="" width="96" height="96">
+      <h1>Carta</h1>
+      <p class="tagline">Your Android screen, as calm as a printed page.</p>
+      <a class="cta" id="download" href="https://github.com/gregogalante/carta/releases/latest">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M5 20h14"/></svg>
+        <span id="download-label">Download APK</span>
+      </a>
+      <p class="meta">Free and open source · Android 11 or newer · <a href="https://github.com/gregogalante/carta/releases">All releases</a></p>
+    </header>
+
+    <section class="intro">
+      <p>Carta makes a phone look and feel closer to an e-ink reader. You pick the effects you want once; one tap in the app, or on the home screen widget, turns them all on and off together and puts your phone back exactly as it was.</p>
+    </section>
+
+    <section>
+      <h2>Effects</h2>
+      <ul class="effects">
+        <li><strong>Grayscale</strong><span>Removes color from the whole screen, using Android's own color correction.</span></li>
+        <li><strong>Warm light</strong><span>Filters out blue light: close to paper by day, warmer in the evening.</span></li>
+        <li><strong>Extra dim</strong><span>Dims whites below the usual minimum brightness. Android 12+.</span></li>
+        <li><strong>Bold text</strong><span>Full, print-like letters everywhere. Android 12+.</span></li>
+        <li><strong>Still motion</strong><span>Turns off system animations, so screens change instantly.</span></li>
+        <li><strong>Paper texture</strong><span>A paper grain over every app and softened blacks, following the light/dark theme.</span></li>
+        <li><strong>Neutral wallpaper</strong><span>Paper-colored by day, ink by night. Your wallpaper is saved and restored.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Install</h2>
+      <ol class="steps">
+        <li>Download the APK above and install it.</li>
+        <li>Grant the system permission once, from a computer with <a href="https://developer.android.com/tools/adb">adb</a> and USB debugging enabled:
+          <pre><code>adb shell pm grant com.gregoriogalante.carta android.permission.WRITE_SECURE_SETTINGS</code></pre>
+        </li>
+        <li>Open Carta and follow the <em>Setup</em> section for the texture service and file access.</li>
+      </ol>
+      <p class="note">Each permission only unlocks its own effects; skip any you do not need.</p>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p>Carta has no internet permission and collects nothing. The accessibility service only draws the texture above other apps: it does not read screen content and listens to no events.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/gregogalante/carta">Source on GitHub</a> · Typeset in Literata
+  </footer>
+
+  <script>
+    // Point the button straight at the latest APK; the releases page stays as fallback.
+    fetch('https://api.github.com/repos/gregogalante/carta/releases/latest')
+      .then(res => res.ok ? res.json() : Promise.reject(res.status))
+      .then(release => {
+        const apk = release.assets.find(asset => asset.name.endsWith('.apk'))
+        if (!apk) return
+        document.getElementById('download').href = apk.browser_download_url
+        document.getElementById('download-label').textContent = `Download ${release.tag_name}`
+      })
+      .catch(() => {})
+  </script>
+</body>
+</html>
